@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Montserrat+Alternates:wght@600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Montserrat+Alternates:wght@600;700;800&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -15,8 +15,8 @@
   --shadow-color: hsla(var(--hue), 80%, 10%, 0.2);
 
   /*========== Font family ==========*/
-  --body-font: 'Jost', sans-serif;
-  --second-font: 'Montserrat Alternates', sans-serif;
+  --body-font: "Jost", sans-serif;
+  --second-font: "Montserrat Alternates", sans-serif;
 
   /*========== Font sizes ==========*/
   --big-font-size: 5.5rem;
@@ -100,6 +100,48 @@ textarea {
 /*=============== LAYOUT ===============*/
 
 /*=============== HEADER & NAV ===============*/
+.header {
+  background-color: var(--first-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  max-width: 1540px;
+}
+
+.nav-logo,
+.nav-link {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+.nav-logo {
+  font-family: var(--second-font);
+  font-size: var(--h3-font-size);
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  column-gap: 1.75rem;
+}
+
+.nav-settings,
+.nav-toggle {
+  cursor: pointer;
+}
+
+.nav-settings {
+  font-size: 1.5rem;
+}
 
 /* Show menu */
 
