@@ -98,7 +98,9 @@ textarea {
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 /*=============== LAYOUT ===============*/
-
+.nav-container {
+  background-color: rebeccapurple;
+}
 /*=============== HEADER & NAV ===============*/
 .header {
   background-color: var(--first-color);
@@ -109,11 +111,11 @@ textarea {
   z-index: 1000;
 }
 
-.nav {
+.nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
+  height: 10rem;
   max-width: 1540px;
 }
 
