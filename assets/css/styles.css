@@ -99,11 +99,13 @@ textarea {
 
 /*=============== LAYOUT ===============*/
 .nav-container {
-  background-color: rebeccapurple;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
 }
 /*=============== HEADER & NAV ===============*/
 .header {
-  background-color: var(--first-color);
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
