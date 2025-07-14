@@ -117,7 +117,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 12rem;
+  height: 5rem;
   max-width: 1540px;
 }
 
@@ -169,6 +169,33 @@ textarea {
 
 .nav-toggle::after {
   bottom: 7px;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--container-color);
+  width: 512px;
+  height: 100%;
+  padding: 9rem 0 0 9.5rem;
+}
+
+.nav-list {
+  margin-bottom: 2.5rem;
+}
+
+.nav-item {
+  margin-bottom: 1.25rem;
+}
+
+.nav-link {
+  font-size: var(--large-font-size);
+  transition: color 0.3 var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--first-color);
 }
 
 /* Show menu */
