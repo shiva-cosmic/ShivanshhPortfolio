@@ -147,6 +147,30 @@ textarea {
   font-size: 1.5rem;
 }
 
+.nav-toggle {
+  width: 28px;
+  height: 28px;
+  position: relative;
+}
+
+.nav-toggle::before,
+.nav-toggle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--title-color);
+  left: 0;
+}
+
+.nav-toggle::before {
+  top: 7px;
+}
+
+.nav-toggle::after {
+  bottom: 7px;
+}
+
 /* Show menu */
 
 /* Active link */
