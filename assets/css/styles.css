@@ -175,6 +175,7 @@ textarea {
   height: 2px;
   background-color: var(--title-color);
   left: 0;
+  transition: all 0.7s var(--transition);
 }
 
 .nav-toggle::before {
@@ -193,6 +194,7 @@ textarea {
   width: 512px;
   height: 100%;
   padding: 9rem 0 0 9.5rem;
+  transition: right 1s var(--transition);
 }
 
 .nav-list {
@@ -213,6 +215,20 @@ textarea {
 }
 
 /* Show menu */
+
+.show-menu {
+  right: 0;
+}
+
+.animate-toggle::before {
+  transform: rotate(45deg);
+  top: 14px;
+}
+
+.animate-toggle::after {
+  transform: rotate(-45deg);
+  bottom: 12px;
+}
 
 /* Active link */
 
