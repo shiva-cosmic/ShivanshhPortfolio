@@ -111,6 +111,11 @@ textarea {
   color: var(--first-color);
 }
 
+.section {
+  padding-block: 8rem;
+  margin-left: 8rem;
+}
+
 /*=============== LAYOUT ===============*/
 .nav-container {
   max-width: 1320px;
@@ -237,6 +242,29 @@ textarea {
 /*=============== MAIN ===============*/
 
 /*=============== HOME ===============*/
+
+.home-container {
+  padding-block: 4.25rem;
+}
+
+.home-subtitle {
+  font-size: var(--larger-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1rem;
+}
+
+.home-subtitle span,
+.home-title span {
+  color: var(--first-color);
+}
+
+.home-title {
+  color: var(--white-color);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-black);
+  -webkit-text-stroke: 2px hsl(0, 0%, 0%);
+  text-shadow: 4px 4px var(--shadow-color);
+}
 
 /*=============== SERVICES ===============*/
 
