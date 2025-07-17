@@ -247,6 +247,10 @@ textarea {
   padding-block: 4.25rem;
 }
 
+.home-content {
+  position: relative;
+}
+
 .home-subtitle {
   font-size: var(--larger-font-size);
   font-weight: var(--font-semi-bold);
@@ -260,10 +264,24 @@ textarea {
 
 .home-title {
   color: var(--white-color);
-  font-size: var(--big-font-size);
+  font-size: var(--h1-font-size);
   font-weight: var(--font-black);
   -webkit-text-stroke: 2px hsl(0, 0%, 0%);
   text-shadow: 4px 4px var(--shadow-color);
+}
+
+.home-job {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-block: 1.5rem 2.5rem;
+}
+
+.home-banner {
+  position: absolute;
+  left: 50;
+  right: 0;
+  top: 50;
+  transform: translateY(-40%);
 }
 
 /*=============== SERVICES ===============*/
