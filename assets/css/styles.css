@@ -283,6 +283,13 @@ textarea {
   top: 50;
   transform: translateY(-40%);
 }
+.home-banner {
+  position: absolute;
+  left: 50;
+  right: 0;
+  top: 50;
+  transform: translateY(-40%);
+}
 
 /*=============== SERVICES ===============*/
 
