@@ -235,11 +235,6 @@ textarea {
   bottom: 12px;
 }
 
-.animate-toggle::after {
-  transform: rotate(-45deg);
-  bottom: 12px;
-}
-
 /* Active link */
 
 /* Change background header */
