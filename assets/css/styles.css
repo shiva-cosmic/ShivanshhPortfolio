@@ -426,6 +426,17 @@ textarea {
   column-gap: 4.5rem;
 }
 
+.home-link::before {
+  content: "";
+  position: absolute;
+  left: -124%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--border-color);
+}
+
 /*=============== SERVICES ===============*/
 
 /* Swiper */
