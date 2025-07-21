@@ -303,7 +303,7 @@ textarea {
 
 .home-title {
   color: var(--white-color);
-  font-size: var(--h1-font-size);
+  font-size: 60px; /* var(--h1-font-size) */
   font-weight: var(--font-black);
   -webkit-text-stroke: 2px hsl(0, 0%, 0%);
   text-shadow: 4px 4px var(--shadow-color);
