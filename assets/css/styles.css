@@ -16,7 +16,7 @@
 
   /*========== Font family ==========*/
   --body-font: "Jost", sans-serif;
-  --second-font: "Montserrat Alternates", sans-serif;
+  --second-font: sans-serif;
 
   /*========== Font sizes ==========*/
   --big-font-size: 5.5rem;
@@ -82,6 +82,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
 img {
   display: block;
   max-width: 100%;
