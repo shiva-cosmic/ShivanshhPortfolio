@@ -464,6 +464,22 @@ textarea {
   width: 450px;
   height: 100%;
   background-color: var(--container-color);
+  padding: 5rem 3.5rem;
+  z-index: 1000;
+}
+
+.style-switcher-title {
+  font-size: var(--h3-font-size);
+  padding-bottom: 1.25rem;
+}
+
+.style-switcher-title,
+.style-switcher-item {
+  border-bottom: 1px solid var(--shadow-color);
+}
+
+.style-switcher-item {
+  padding-block: 1rem;
 }
 
 /* Show switcher */
