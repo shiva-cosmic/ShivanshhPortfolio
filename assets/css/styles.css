@@ -456,11 +456,11 @@ textarea {
 /*=============== FOOTER ===============*/
 
 /*=============== STYLE SWITCHER ===============*/
-/* Side Humburger CSS */
+/* Side Humburger Menu CSS */
 .style-switcher {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   width: 450px;
   height: 100%;
   background-color: var(--container-color);
