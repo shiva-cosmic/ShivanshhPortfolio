@@ -466,6 +466,7 @@ textarea {
   background-color: var(--container-color);
   padding: 5rem 3.5rem;
   z-index: 1000;
+  transition: right 1s var(--transition);
 }
 
 .style-switcher-title {
@@ -544,7 +545,9 @@ textarea {
 }
 
 /* Show switcher */
-
+.show-switcher {
+  right: 0;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1200px) {
