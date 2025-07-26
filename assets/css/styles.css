@@ -561,6 +561,9 @@ textarea {
 .show-switcher {
   right: 0;
 }
+.show-switcher {
+  right: 0;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1200px) {
