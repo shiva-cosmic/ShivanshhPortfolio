@@ -14,7 +14,7 @@ navToggle.addEventListener("click", () => {
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 /*=============== SERVICES SWIPER ===============*/
-
+var servicesSwiper = new Swiper(".services-swiper", {});
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 /* Active work */
