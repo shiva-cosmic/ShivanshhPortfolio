@@ -15,22 +15,18 @@ navToggle.addEventListener("click", () => {
 
 /*=============== SERVICES SWIPER ===============*/
 var servicesSwiper = new Swiper(".services-swiper", {
+  spaceBetween: 32,
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 40,
+      slidesPerView: 2,
     },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 50,
+    1208: {
+      slidesPerView: 3,
     },
   },
 });
