@@ -551,11 +551,6 @@ textarea {
   background-color: var(--first-color);
   border-width: 1px;
 }
-.swiper-pagination-bullet-active {
-  transform: scale(1.7);
-  background-color: var(--first-color);
-  border-width: 1px;
-}
 
 /*=============== SKILLS ===============*/
 
