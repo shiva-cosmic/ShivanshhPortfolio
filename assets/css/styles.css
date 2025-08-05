@@ -603,6 +603,16 @@ textarea {
   background-color: var(--border-color);
   position: relative;
 }
+.skills-percentage {
+  display: block;
+  background-color: var(--border-color);
+  position: relative;
+}
+.skills-percentage {
+  display: block;
+  background-color: var(--border-color);
+  position: relative;
+}
 
 .skills-percentage::before {
   content: "";
