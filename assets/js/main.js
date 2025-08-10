@@ -53,7 +53,21 @@ function activeWork() {
 linkWork.forEach((a) => a.addEventListener("click", activeWork));
 
 /*=============== RESUME ===============*/
+const accordionItems = document.querySelectorAll(".resume-item");
 
+accordionItems.forEach((item) => {
+  const header = item.querySelector(".resume-header");
+
+  content = item.querySelector(".resume-content");
+  icon = item.querySelector(".resume-icon i");
+
+  header.addEventListener("click", () => {
+    const isOpen = item.classList.toggle("accordion-open");
+
+    content.style.height = isOpen ? content.scrollHeight + "px" : "0";
+    icon.className = isOpen ? "ri-subtract-line" : "ri-add-line";
+  });
+});
 /*=============== TESTIMONIALS SWIPER ===============*/
 
 /*=============== EMAIL JS ===============*/
