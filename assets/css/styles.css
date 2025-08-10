@@ -767,6 +767,10 @@ textarea {
   font-weight: var(--font-bold);
 }
 
+.resume-description {
+  margin-block: 1.25rem 2rem;
+}
+
 /*=============== TESTIMONIALS ===============*/
 
 /*=============== CONTACT ===============*/
