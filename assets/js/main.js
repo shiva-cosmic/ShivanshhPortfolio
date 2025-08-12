@@ -58,8 +58,10 @@ const accordionItems = document.querySelectorAll(".resume-item");
 accordionItems.forEach((item) => {
   const header = item.querySelector(".resume-header");
 
-  content = item.querySelector(".resume-content");
-  icon = item.querySelector(".resume-icon i");
+  const content = item.querySelector(".resume-content");
+  const icon = item.querySelector(".resume-icon i");
+
+  content.style.transition = "height 0.3s ease";
 
   header.addEventListener("click", () => {
     const isOpen = item.classList.toggle("accordion-open");
