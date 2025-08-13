@@ -749,6 +749,7 @@ textarea {
 .resume-content {
   height: 0; /* Initially hidden (fixed) */
   overflow: hidden;
+  transition: height 0.3s var(--transition);
 }
 
 .resume-content-header {
