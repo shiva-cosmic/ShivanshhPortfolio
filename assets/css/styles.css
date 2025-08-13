@@ -124,6 +124,7 @@ textarea {
   color: var(--first-color);
 }
 
+/* Important */
 .section {
   padding-block: 8rem;
   margin-left: 4rem; /* Alingment Of left side of whole page */
@@ -746,7 +747,7 @@ textarea {
   z-index: 10;
 }
 .resume-content {
-  height: auto;
+  height: 0; /* Initially hidden (fixed) */
   overflow: hidden;
 }
 
