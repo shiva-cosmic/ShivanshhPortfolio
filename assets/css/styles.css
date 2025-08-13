@@ -126,7 +126,8 @@ textarea {
 
 .section {
   padding-block: 8rem;
-  margin-left: 4rem;
+  margin-left: 4rem; /* Alingment Of left side of whole page */
+  margin-right: 2rem; /* Alingment Of right side of whole page */
 }
 
 .btn,
