@@ -778,6 +778,7 @@
 
                 <input
                   type="text"
+                  name="name"
                   class="contact-form-input"
                   id="contact-name"
                 />
@@ -790,6 +791,7 @@
 
                 <input
                   type="text"
+                  name="email"
                   class="contact-form-input"
                   id="contact-email"
                 />
@@ -803,6 +805,7 @@
 
               <input
                 type="text"
+                name="subject"
                 class="contact-form-input"
                 id="contact-subject"
               />
@@ -814,6 +817,7 @@
               >
 
               <textarea
+                name="message"
                 class="contact-form-input contact-form-area"
                 id="contact-message"
               ></textarea>
@@ -900,7 +904,10 @@
     <script src="assets/js/mixitup.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <!--=============== JS ===============-->
     <script src="assets/js/main.js"></script>
   </body>
