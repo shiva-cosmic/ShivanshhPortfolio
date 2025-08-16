@@ -100,6 +100,58 @@ var servicesSwiper = new Swiper(".testimonials-swiper", {
 });
 
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById("contact-form");
+contactName = document.getElementById("contact-name");
+contactEmail = document.getElementById("contact-email");
+contactSubject = document.getElementById("contact-subject");
+contactMessage = document.getElementById("contact-message");
+message = document.getElementById("message");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+  if (
+    contactName.value === "" ||
+    contactEmail.value === "" ||
+    contactSubject.value === "" ||
+    contactMessage.value === ""
+  ) {
+    message.classList.add("color-red");
+    message.textContent = "Write all the input fields";
+
+    setTimeout(() => {
+      message.textContent = "";
+    }, 3000);
+  } else {
+    emailjs
+      .sendForm(
+        "service_doojxrs",
+        "template_ds0gyxp",
+        "#contact-form",
+        "wIe0Z7_aDedRkGJfy"
+      )
+      .then(
+        () => {
+          message.classList.remove("color-first");
+          message.classList.add("color-red");
+          message.textContent = "Message sent successfully";
+
+          setTimeout(() => {
+            message.textContent = "";
+          }, 5000);
+        },
+        (error) => {
+          alert("Oops! Something went wrong. Please try again later.", error);
+        }
+      );
+
+    contactName.value = "";
+    contactEmail.value = "";
+    contactSubject.value = "";
+    contactMessage.value = "";
+  }
+};
+
+contactForm.addEventListener("submit", sendEmail);
 
 /*=============== STYLE SWITCHER ===============*/
 const styleSwitcher = document.getElementById("style-switcher");

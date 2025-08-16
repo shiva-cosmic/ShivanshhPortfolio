@@ -813,6 +813,7 @@ textarea {
 .contact-container {
   grid-template-columns: 5fr 7fr;
   column-gap: 1.5rem;
+  position: relative;
 }
 
 .contact-card {
@@ -857,6 +858,7 @@ textarea {
 
 .contact-form {
   row-gap: 1.75rem;
+  position: relative;
 }
 
 .contact-form-group {
@@ -902,6 +904,14 @@ textarea {
   bottom: 0.75rem;
   right: 1.25rem;
   font-weight: var(--font-medium);
+}
+
+color-red {
+  color: hsl(5, 69%, 51%);
+}
+
+.color-first {
+  color: var(--first-color);
 }
 
 /*=============== FOOTER ===============*/
