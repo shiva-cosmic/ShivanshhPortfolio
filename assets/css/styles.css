@@ -823,7 +823,8 @@ textarea {
   margin-bottom: 2.5rem;
 }
 
-.contact-icon .contact-form-input {
+.contact-icon,
+.contact-form-input {
   border: 2px solid var(--border-color);
   background-color: var(--container-color);
 }
@@ -863,7 +864,7 @@ textarea {
   gap: 1.75rem;
 }
 
-.contact-form-div {
+.contact-from-div {
   display: grid;
   row-gap: 0.5rem;
 }
@@ -876,6 +877,31 @@ textarea {
 
 .contact-form-label b {
   color: var(--first-color);
+}
+
+.contact-form-input {
+  padding: 1rem 1.75rem;
+  border-radius: 1.75rem;
+}
+
+.contact-form-area {
+  resize: none;
+  height: 140px;
+}
+
+.contact-submit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem 2rem;
+}
+
+.message {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 1.25rem;
+  font-weight: var(--font-medium);
 }
 
 /*=============== FOOTER ===============*/
