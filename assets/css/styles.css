@@ -203,6 +203,8 @@ textarea {
   transform: translateX(-0.5rem);
 }
 
+/* Deco */
+/* 
 .section-deco {
   position: absolute;
   top: 0;
@@ -220,7 +222,7 @@ textarea {
 }
 
 .section-deco::before,
-.section-deco:right {
+.section-deco::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -240,6 +242,19 @@ textarea {
   bottom: 0;
   transform: translate(-50%, -100%);
 }
+
+.section-deco .shape {
+  max-width: 226px;
+  height: 226px;
+  bottom: -206px;
+}
+
+.deco-left .shape {
+  left: -166px;
+}
+.deco-left .shape {
+  right: -166px;
+} */
 
 /*=============== LAYOUT ===============*/
 .nav-container {
