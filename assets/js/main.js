@@ -29,6 +29,27 @@ const scrollheader = () => {
 };
 window.addEventListener("scroll", scrollheader);
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    (sectionTop = current.offsetTop), (sectionId = current.getAttribute("id"));
+    sectionClass = document.querySelector(
+      ".nav-menu a[href*=" + sectionId + "]"
+    );
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionClass.classList.add("active-link");
+    } else {
+      sectionClass.classList.remove("active-link");
+    }
+  });
+};
+
+window.addEventListener("load", scrollActive);
 
 /*=============== SERVICES SWIPER ===============*/
 var servicesSwiper = new Swiper(".services-swiper", {
