@@ -11,6 +11,14 @@ navToggle.addEventListener("click", () => {
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
+const scrollheader = () => {
+  const header = document.getElementById("header");
+
+  this.scrollY >= 20
+    ? header.classList.add("bg-header")
+    : header.classList.remove("bg-header");
+};
+window.addEventListener("scroll", scrollheader);
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 /*=============== SERVICES SWIPER ===============*/
