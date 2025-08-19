@@ -388,6 +388,10 @@ textarea {
 
 /* Change background header */
 
+.bg-header {
+  background-color: var(--container-color);
+}
+
 /*=============== MAIN ===============*/
 
 /*=============== HOME ===============*/
