@@ -36,10 +36,11 @@ const scrollActive = () => {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
-    (sectionTop = current.offsetTop), (sectionId = current.getAttribute("id"));
-    sectionClass = document.querySelector(
-      ".nav-menu a[href*=" + sectionId + "]"
-    );
+    sectionTop = current.offsetTop - 58;
+    (sectionId = current.getAttribute("id")),
+      (sectionClass = document.querySelector(
+        ".nav-menu a[href*=" + sectionId + "]"
+      ));
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       sectionClass.classList.add("active-link");
@@ -49,7 +50,7 @@ const scrollActive = () => {
   });
 };
 
-window.addEventListener("load", scrollActive);
+window.addEventListener("scroll", scrollActive);
 
 /*=============== SERVICES SWIPER ===============*/
 var servicesSwiper = new Swiper(".services-swiper", {
