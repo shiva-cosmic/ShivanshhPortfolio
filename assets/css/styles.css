@@ -1226,11 +1226,99 @@ color-red {
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
+  .nav-menu,
+  .style-switcher {
+    width: 100%;
+  }
+
+  .nav-buttons {
+    column-gap: 1.5rem;
+  }
+
+  .home-data {
+    transform: scale(0.7);
+  }
+
+  .services-swiper,
+  .testimonial-swiper {
+    max-width: 420px;
+  }
+
+  .swiper-pagination-bullet::before {
+    width: 120px;
+  }
+
+  .skills-container {
+    grid-template-columns: fit-content(550px);
+  }
+
+  .skills-container,
+  .work-container {
+    justify-content: center;
+  }
+
+  .work-list {
+    column-gap: 2rem;
+  }
+
+  .work-container {
+    grid-template-columns: fit-content(420px);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    row-gap: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 1.25rem;
+  }
+
+  .nav-button {
+    column-gap: 1.25rem;
+  }
+
+  .nav-menu {
+    padding-left: 7rem;
+  }
+
+  .header-deco {
+    left: 56px;
+  }
+  .home-data {
+    transform: scale(0.6);
+  }
+
+  .skills-container {
+    row-gap: 3rem;
+  }
 }
 
 /* For small devices */
 @media screen and (max-width: 400px) {
+  .nav-menu {
+    padding-left: 6rem;
+  }
+
+  .header-deco {
+    left: 40px;
+  }
+
+  .home-banner,
+  .home-img-wrapper {
+    width: 100%;
+  }
+  .home-data {
+    transform: scale(0.5);
+  }
+
+  .card {
+    padding-inline: 2rem;
+  }
+  .skills-header,
+  .skills-description {
+    padding-inline: 1.25rem;
+  }
 }
