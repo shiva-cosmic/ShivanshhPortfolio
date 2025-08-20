@@ -41,6 +41,16 @@
 
 /* Responsive typography */
 @media screen and (max-width: 1024px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --larger-font-size: 1.125rem;
+    --large-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.812rem;
+  }
 }
 
 /*=============== DARK THEME ===============*/
@@ -1103,9 +1113,115 @@ color-red {
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1200px) {
+  .section-deco:not(.header-deco) {
+    display: none;
+  }
+
+  .home-banner {
+    position: relative;
+    right: initial;
+    top: initial;
+    transform: translateY(0);
+    width: max-content;
+  }
+
+  .home-content {
+    text-align: center;
+  }
+
+  .home-banner,
+  .home-description,
+  .home-socials,
+  .home-btns {
+    margin-inline: auto;
+  }
+
+  .home-banner {
+    margin-block: 2.5rem;
+  }
+
+  .home-data {
+    transform: scale(0.9);
+  }
+
+  .home-btns {
+    flex-direction: column;
+    row-gap: 3.75rem;
+  }
+
+  .home-link::before {
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 40px;
+  }
+
+  .services-swiper,
+  .testimonial-swiper {
+    max-width: 900px;
+  }
+
+  .swiper-pagination-bullet::before {
+    width: 90px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-container {
+    grid-template-columns: repeat(2, fit-content(434px));
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .nav {
+    height: 4rem;
+  }
+
+  .section {
+    padding-block: 6rem 1rem;
+  }
+
+  .home-container {
+    padding-block: 2rem;
+  }
+
+  .home-title {
+    text-shadow: 2px 2px var(--shadow-color);
+  }
+
+  .home-data {
+    transform: scale(0.8);
+  }
+
+  .swiper-pagination-bullet::before {
+    top: 11.5px;
+  }
+
+  .resume-container {
+    grid-template-columns: fit-content(550px);
+    justify-content: center;
+    row-gap: 2.5rem;
+  }
+
+  .contact-container,
+  .contact-form-group {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    row-gap: 1.5rem;
+  }
+
+  .contact-form,
+  .conact-content {
+    max-width: 550px;
+    width: 100%;
+    margin-inline: auto;
+  }
 }
 
 /* For medium devices */
