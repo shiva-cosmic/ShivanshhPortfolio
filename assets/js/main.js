@@ -15,11 +15,6 @@ const linkAction = () => {
   navToggle.classList.remove("animate-toggle");
   navMenu.classList.remove("show-menu");
 };
-const linkAction = () => {
-  const navMenu = document.getElementById("nav-menu");
-  navToggle.classList.remove("animate-toggle");
-  navMenu.classList.remove("show-menu");
-};
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
