@@ -1,6 +1,8 @@
 /*=============== MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle");
+const navMenu = document.getElementById("nav-menu"),
+  navToggle = document.getElementById("nav-toggle");
 
 /* Menu show - hidden */
 navToggle.addEventListener("click", () => {
