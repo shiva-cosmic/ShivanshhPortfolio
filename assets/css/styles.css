@@ -570,7 +570,7 @@ textarea {
 
 /*=============== SERVICES ===============*/
 
-.card {
+/* .card {
   background-color: var(--container-color);
   padding: 2rem 2.25rem;
   border-radius: 1.25rem;
@@ -600,10 +600,10 @@ textarea {
 
 .services-description {
   min-height: 175px;
-}
+} */
 
 /* Swiper */
-.swiper-pagination {
+/* .swiper-pagination {
   position: initial;
   margin-top: 3rem;
 }
@@ -636,7 +636,7 @@ textarea {
   transform: scale(1.7);
   background-color: var(--first-color);
   border-width: 1px;
-}
+} */
 
 /*=============== SKILLS ===============*/
 .skills-container {
@@ -705,7 +705,7 @@ textarea {
 }
 
 /*=============== WORK ===============*/
-.work-list {
+/* .work-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -735,11 +735,11 @@ textarea {
   height: 2px;
   background-color: var(--first-color);
   transition: width 0.3s var(--transition);
-}
+} */
 
 /* Active work */
 
-.active-work {
+/* .active-work {
   color: var(--first-color);
 }
 
@@ -772,10 +772,10 @@ textarea {
 
 .work-description {
   min-height: 125px;
-}
+} */
 
 /*=============== RESUME ===============*/
-.resume-container {
+/* .resume-container {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.5rem;
 }
@@ -825,14 +825,15 @@ textarea {
   display: grid;
   place-items: center;
   z-index: 10;
-}
-.resume-content {
-  height: 0; /* Initially hidden (fixed) */
-  overflow: hidden;
-  transition: height 0.3s var(--transition);
-}
+} */
 
-.resume-content-header {
+/* .resume-content { */
+/*height: 0;*/ /*Initially hidden (fixed) */
+/* overflow: hidden;
+  transition: height 0.3s var(--transition);
+} */
+
+/* .resume-content-header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -852,10 +853,10 @@ textarea {
 
 .resume-description {
   margin-block: 1.25rem 2rem;
-}
+} */
 
 /*=============== TESTIMONIALS ===============*/
-.testimonial-icon {
+/* .testimonial-icon {
   position: absolute;
   top: 2rem;
   left: 2.25rem;
@@ -882,7 +883,7 @@ textarea {
 .testimonial-name {
   font-size: var(--larger-font-size);
   margin-block: 2rem 0.25rem;
-}
+} */
 
 /*=============== CONTACT ===============*/
 
